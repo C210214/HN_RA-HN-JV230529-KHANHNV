@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js get value form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Rikkei Academy</h1>
+    </div>
+    <div class="container">
+        <form>
+            <div class="wrapper_student">
+                <h2>Thông tin học viên</h2>
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input class="validate-mode" type="text" value="" id="name" placeholder="Vui lòng nhập tên"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="validate-mode" type="email" value="" id="email" placeholder="Vui lòng nhập email"/>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input class="validate-mode" type="text" value="" id="phone" placeholder="Vui lòng nhập số điện thoại"/>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Quê quán</label>
+                    <input class="validate-mode" type="text" value="" id="address" placeholder="Vui lòng nhập địa chỉ quê quán"/>
+                </div>
+                <div class="form-group-radio">
+                    <label class="sex" for="radio">Giới tính</label>
+                    <div class="contain_radio">
+                        <div class="item" id="item1">
+                            <label class="container1" for="male">Nam
+                                <input id="male" class="sex-select" type="radio" value="Nam" checked name="sex">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="item">
+                            <label class="container1" for="female">Nữ
+                                <input id="female" class="sex-select" type="radio" value="Nữ" name="sex">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" >Lưu lại</button>
+                </div>
+            </div>
+        </form>
+        <div class="table_list">
+            <div class="header">
+                <h2>Danh sách học viên</h2>
+                <div class="empty"></div>
+            </div>
+            <div class="main">
+                <div class="search">
+                    <div class="main_right">
+                        <p>Tìm kiếm tên học viên:<p>
+                        <input class="searchInput input_search" type="text" placeholder="Học viên bạn muốn tìm">
+                        <button class="search btn_search">Search</button>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Họ và tên</th>
+                            <th>Email</th>
+                            <th>Điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Gender</th>
+                            <th>Hành động</th>
+                            <th><button class="sort">Sắp xếp (alpha b)</button></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

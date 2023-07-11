@@ -1,0 +1,251 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+.title h1{
+    font-size: 40px;
+    color: #2521f3;
+}
+.container{
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+}
+.header{
+    margin-bottom: 25px;
+}
+form{
+    width: 31%;
+}
+.wrapper_student{
+    padding: 20px;
+    border: 1px solid black;
+
+}
+.wrapper_student h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group label{
+    width: 28%;
+    padding: 7px;
+    font-size: 18px;
+}
+.form-group-radio .sex{
+    width: 28%;
+    font-size: 18px;
+    padding: 7px;
+}
+.form-group input{
+    padding: 7px;
+    font-size: 18px;
+    width: 72%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.form-group input:focus{
+    outline: none;
+}
+.form-group-radio{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group-radio .sex_choose{
+    width: 20%;
+    margin-left: 20px;
+    padding: 7px;
+}
+.contain_radio{
+    display: flex;
+    align-items: center;
+    margin-left: 27px;
+}
+.contain_radio label{
+    padding: 0;
+}
+.container1{
+    display: inline-block;
+    position:relative;
+    cursor:pointer;
+    font-size:18px;
+    user-select: none;
+    padding-left:40px;
+}
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark{
+    position:absolute;
+    top:1px;
+    left:-28px;
+    width:20px;
+    height:20px;
+    background:#f0ecec;
+    border-radius:50%;
+    border: 0px solid #2196F3;
+}
+.container1:hover .checkmark{
+    background:#ccc;
+}
+.checkmark:after{
+    content:"";
+    position:absolute;
+    display:none;
+}
+.container1 .checkmark:after{
+    top:50%;
+    left:50%;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    border: solid 3px white;
+    transform:translate(-50%,-50%) rotate(45deg);
+}
+.container1 input:checked ~ .checkmark{
+    background:#2196F3;
+}
+.container1 input:checked ~ .checkmark:after{
+    display:block;
+}
+#item1{
+    margin-right: 50px;
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #e0dfdf;
+}
+.btn button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.table_list{
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+.table_list h2 {
+    text-align: center;
+    font-size: 25px;
+}
+table{
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    min-width: 400px;
+    border: 1px solid black;
+    width: 100%;
+}
+table thead tr {    
+    text-align: center;
+}
+table th,
+table td {
+    padding: 7px 10px;
+    border: 1px solid black;
+    font-weight: 300;
+    text-align: center;
+}
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #e0dfdf;
+}
+table tbody tr.active-row {
+    font-weight: bold;
+}
+th button{
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #e0dfdf;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+th button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+td button {
+    font-size: 18px;
+    padding: 5px 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #e0dfdf;
+}
+td button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.main_right{
+    display: flex;
+    align-items: center;
+}
+.main_right p{
+    font-size: 18px;
+}
+.search .main_right button{
+    padding: 7px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;   
+    font-size: 18px;
+    background-color: #e0dfdf;
+
+}
+.search .main_right button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.search .searchInput {
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 300px;
+    margin-right: 3px;
+    margin-left: 10px;
+}   
+.search input:focus {
+    outline: none;
+}
+.hide {
+    display: none;
+}
+.empty{
+    text-align: center;   
+}
+.empty p {
+    padding: 100px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.form-group input.invalid{
+    border: 1px solid red;
+  }
